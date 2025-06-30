@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5; /* Lighter grey-blue background */
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #1A2B4C; /* Dark blue */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #2C5DA0; /* Medium blue for hover */
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.page-container {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1A2B4C; /* Dark blue */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2C5DA0; /* Medium blue for focus */
+}
+
+.form-input:read-only {
+  background-color: #f8f9fa;
+  color: #666;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #2C5DA0; /* Medium blue */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1A4D8A; /* Darker blue */
+}
+
+.btn-success {
+  background-color: #28a745; /* Standard green for success, or a desaturated blue */
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Standard grey */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Darker grey */
+}
+
+.btn-error { /* Added this for delete buttons to be explicitly red */
+  background-color: #E74C3C; /* Accent Red */
+  color: white;
+}
+
+.btn-error:hover {
+  background-color: #C0392B; /* Darker Accent Red */
+}
+
+
+.alert {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+  background-color: #f8d7da; /* Light Red */
+  color: #721c24; /* Dark Red */
+  border: 1px solid #f5c6cb;
+}
+
+.course-info {
+  background-color: #E0E8F0; /* Light blue accent */
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #2C5DA0; /* Medium blue border */
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 4rem auto;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1A2B4C; /* Dark blue */
+  margin-bottom: 2rem;
+}
+
+.course-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1A2B4C; /* Dark blue */
+}
+
+.current-code {
+  background-color: #E0E8F0; /* Light blue accent */
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1A2B4C; /* Dark blue */
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-table th {
+  background-color: #E0E8F0; /* Light blue accent for table headers */
+  font-weight: 600;
+  color: #1A2B4C; /* Dark blue */
+}
+
+.attendance-table tr:hover {
+  background-color: #f5f5f5; /* Lighter hover for table rows */
+}
+
+.no-records {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 2rem;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
